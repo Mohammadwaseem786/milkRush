@@ -1,1 +1,1 @@
-# milkRush
+MilkRush is a learning project where i learn how to create repo branches and commit the changes so tht i can contribute to the companies project and collabarate with the team members in a healthy way so to track changes 
