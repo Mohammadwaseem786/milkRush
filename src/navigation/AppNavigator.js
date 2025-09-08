@@ -1,48 +1,17 @@
-
-
-import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
-
-// use your existing files:
-import Login from '../screens/Login';
-import SecondScreen from '../screens/SecondScreen';
-import ThirdScreen from '../screens/ThirdScreen';
-
-
-
-
-const Stack = createNativeStackNavigator();
-
+// src/navigation/AppNavigator.js
+import React, { useState } from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import RootStack from "./RootStack.js";
+//import AuthStack from "./AuthStack";
+//import FarmerStack from "./FarmerStack";
+//import AdminStack from "./AdminStack";
 
 export default function AppNavigator() {
+
   return (
-   
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Login">
-        <Stack.Screen
-          name="Login"
-          component={Login}
-          options={{ title: 'Login', headerShown: true }}
-        />
-        <Stack.Screen
-          name="SecondScreen"
-          component={SecondScreen}
-          options={{ title: 'Second Screen', headerShown: true }}
-        />
-        <Stack.Screen
-          name="ThirdScreen"
-          component={ThirdScreen}
-          options={{ title: 'Third Screen', headerShown: true }}
-        />
-      </Stack.Navigator>
-
-
+      <RootStack/>
     </NavigationContainer>
-   
   );
+  
 }
-
-
-

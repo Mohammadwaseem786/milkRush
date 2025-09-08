@@ -2,7 +2,9 @@
   "expo": {
     "name": "milkRush",
     "slug": "milkRush",
-    "sdkVersion": "53.0.0"
+    "sdkVersion": "53.0.0",
+    "plugins": [
+      "expo-font"
+    ]
   }
-  
 }
